@@ -1,7 +1,14 @@
 import React from "react";
 
-const Wrapper = ({ children }) => {
-  return <div className="container mx-auto bg-slate-500">{children}</div>;
+const Wrapper = ({ title = "[INSERT_TITLE]", children }) => {
+  return (
+    <div className="">
+      <div className=" bg-gray-600 text-white text-2xl py-4 ">
+        <h1 className="container mx-auto">{title}</h1>
+      </div>
+      <div className="container mx-auto bg-slate-500">{children}</div>
+    </div>
+  );
 };
 
 export default Wrapper;

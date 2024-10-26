@@ -1,7 +1,8 @@
 import Image from "next/image";
+import Wrapper from "./_components/Wrapper";
 
 export default function Home() {
   return (
-   <h1>sadad</h1>
+    <Wrapper title="Popular Titles"></Wrapper>
   );
 }
