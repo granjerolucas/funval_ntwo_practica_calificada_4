@@ -4,10 +4,10 @@ import { getStreamingByType, getTypes } from "@/src/api/streaming.api";
 import ContentItem from "../_components/ContentItem";
 import PageLoading from "../_components/PageLoading";
 
-export default function SeriesPage() {
+export default function MoviesPage() {
   const [content, setContent] = useState([]);
   useEffect(() => {
-    const req = getStreamingByType("series");
+    const req = getStreamingByType("movie");
     req.action.then((res) => {
       setContent(res.data);
     });
